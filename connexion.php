@@ -3,6 +3,7 @@
 require_once __DIR__ . "/includes/session.php";
 
 
+
 try {
     $pdo = new PDO("mysql:host=localhost;dbname=moduleconnexion", "root", "");
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -14,11 +15,14 @@ try {
 ?>
 
 <?php include 'includes/header.php'; ?>
-<?php include 'includes/infosession.php'; ?>
 
 
-<?php if (isset($_SESSION['messageconnexion'])) {
-    echo "<p style='text-align: center; color: gold;'> " . $_SESSION['messageconnexion'] . " </p>";
+<?php $formType = 'connexion';
+include 'includes/forminscription.php'; ?>
+
+<?php
+if (isset($_SESSION['message'])) {
+    echo "<p style='text-align: center; color: gold;'> Connexion reussie veuillez vous connecter </p>";
 }
 ?>
 
@@ -26,4 +30,3 @@ try {
 
 
 <?php include 'includes/footer.php'; ?>
-

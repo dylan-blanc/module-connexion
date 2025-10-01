@@ -1,0 +1,124 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: white ;
+  background-color: #2c3e50;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* -------------------------------HEADER------------------------------ */
+
+header {
+  background-color: #2c3e50;
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  height: 70px;
+}
+
+.navbar {
+  max-width: auto;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  background-color: black;
+}
+
+h1 {
+  margin-left: 3%;
+}
+
+.nav-container h1 a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  align-items: center;
+  margin-right: 3%;
+  background-color: black;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.nav-menu a:hover {
+  background-color: #34495e;
+}
+
+/* -----------------------------------FOOTER-------------------------------- */
+
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+
+/* -----------------------------------FORMULAIRE-------------------------------- */
+
+.formulaire label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.formulaire input,
+.formulaire select,
+.formulaire textarea {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #333;
+  margin-bottom: -20px;
+}
+
+.formulaire {
+  background-color: #34495e;
+  padding: 20px;
+  max-width: 307px;
+  margin: 2px auto;
+  border-radius: 8px;
+}
+
+.formulaire input[type="submit"] {
+  background-color: #2c3e50;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.formulaire input[type="submit"]:hover {
+  background-color: #1a242f;
+}

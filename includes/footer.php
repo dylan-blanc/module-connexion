@@ -1,3 +1,6 @@
+<body>
+    <main>
+        <!-- contenu principal -->
     </main>
     <footer>
         <div class="footer-content">
@@ -5,4 +8,5 @@
         </div>
     </footer>
 </body>
+
 </html>
