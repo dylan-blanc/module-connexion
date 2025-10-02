@@ -4,7 +4,10 @@
     </main>
     <footer>
         <div class="footer-content">
-            <p>O7</p>
+            <?php if (isset($_SESSION['messageconnexion'])) {
+                echo "<p class='message-connexion'> " . $_SESSION['messageconnexion'] . " </p>";
+            }
+            ?>
         </div>
     </footer>
 </body>

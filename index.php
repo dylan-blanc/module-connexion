@@ -16,12 +16,7 @@ try {
 <?php include 'includes/header.php'; ?>
 <?php include 'includes/infosession.php'; ?>
 
-
-<?php if (isset($_SESSION['messageconnexion'])) {
-    echo "<p style='text-align: center; color: gold;'> " . $_SESSION['messageconnexion'] . " </p>";
-}
-?>
-
+<?php include 'includes/indexcontent.php'; ?>
 
 
 

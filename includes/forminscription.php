@@ -74,7 +74,7 @@
 
                 if ($unique) {
                     echo "<p style='text-align: center; color: red;'>Ce login existe déjà !</p>";
-                } else {  // Insérer le nouvel utilisateur dans la Base de donnée (PDO)
+                } else {  // Insérer le nouveau utilisateur dans la Base de donnée (PDO)
                     $stmt = $pdo->prepare("INSERT INTO utilisateurs (login, password, prenom, nom, email) VALUES (?, ?, ?, ?, ?)");   // Insérer le nouvel utilisateur
                     $stmt->execute([$login, $password, $prenom, $nom, $email]); 
                     echo "<p style='text-align: center; color: gold;'>Inscription réussie !</p>";
@@ -125,7 +125,7 @@
                     $_SESSION['user_id'] = $user['id'];
                     $_SESSION['user_login'] = $user['login'];
                     echo "<p style='text-align: center; color: green;'>Connexion réussie !</p>";
-                    $_SESSION['messageconnexion'] = "Connexion réussie, bienvenue ! " . htmlspecialchars($user['prenom']);
+                    $_SESSION['messageconnexion'] = "Connexion réussie, bienvenue " . htmlspecialchars($user['prenom']);
                     header('Location: index.php');
                 } else {
                     echo "<p style='text-align: center; color: red;'>Login ou mot de passe incorrect !</p>";
