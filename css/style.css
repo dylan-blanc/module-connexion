@@ -7,7 +7,7 @@ body {
 
 body {
   font-family: Arial, sans-serif;
-  color: white ;
+  color: white;
   background-color: #2c3e50;
   min-height: 100vh;
   display: flex;
@@ -76,14 +76,14 @@ h1 {
 /* -----------------------------------index, body-------------------------------- */
 
 .message-connexion {
-    text-align: center;
-    color: gold;
-    background: #222;
-    margin: 0 auto;
-    position: sticky;
-    top: 10%;
-    z-index: 1000;
-    padding: 10px 0;
+  text-align: center;
+  color: gold;
+  background: #222;
+  margin: 0 auto;
+  position: sticky;
+  top: 10%;
+  z-index: 1000;
+  padding: 10px 0;
 }
 
 /* -----------------------------------FOOTER-------------------------------- */

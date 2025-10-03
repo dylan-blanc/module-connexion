@@ -16,7 +16,6 @@ try {
 <?php include 'includes/header.php'; ?>
 <?php include 'includes/infosession.php'; ?>
 
-<?php include 'includes/indexcontent.php'; ?>
 
 
 
