@@ -18,7 +18,7 @@ function isAdmin()
 
 
 
-// Fonction pour se déconnecter, supprimer la session/cookie et rediriger vers le formulaire de connexion
+// Fonction pour se deconnecter, supprimer la session/cookie et rediriger vers le formulaire de connexion
 function logout()
 {
     if (session_status() === PHP_SESSION_NONE) {
